@@ -224,8 +224,137 @@ button a {
     font-weight: 400;
     line-height: 28px;
     /* 175% */
+    cursor: pointer;
 }
 
 .secundaria__rodape {
     margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+
+    button {
+        width: 144px;
+        height: 50px;
+        flex-shrink: 0;
+        background-color: #104b4f;
+    }
+
+    .cabecalho__nav-ul {
+        display: none;
+    }
+
+    .principal__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .principal__container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .principal__container-dois {
+        display: flex;
+        width: 100%;
+        height: 299px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .principal__container-dois h2 {
+        display: flex;
+        height: 70px;
+        padding: 18px 0 17px 0;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .principal__container-dois p {
+        display: flex;
+        width: 290px;
+        height: 84px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .secundaria {
+        display: flex;
+        width: 100%;
+        height: 837px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .secundaria__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .secundaria__container-h2 {
+        width: 228px;
+        color: #000;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .secundaria__container-p {
+        display: flex;
+        width: 277px;
+        height: 84px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+    .secundaria__container-dois {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .secundaria__container-dois img {
+        display: flex;
+        width: 200.5px;
+        height: auto;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .secundaria__rodape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding-top: 23px;
+        padding-bottom: 44px;
+    }
+
+    .secundaria__link {
+        color: #000;
+        font-family: Mulish;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 200% */
+        letter-spacing: 0.444px;
+        margin-left: 10px;
+    }
 }
